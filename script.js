@@ -25,7 +25,7 @@ function generatePassword() {
 
   var password = "";
 
-  //Todo Generate password and other logic here
+  // Todo Generate password and other logic here
 
   var passwordLength = parseInt(
     prompt(
@@ -33,7 +33,7 @@ function generatePassword() {
     )
   );
 
-  // group selected characters
+  // Group selected characters
 
   if (Number < 8 || Number > 128) {
     alert("Please choose a valid number of characters.");
