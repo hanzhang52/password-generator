@@ -29,13 +29,13 @@ function generatePassword() {
 
   var passwordLength = parseInt(
     prompt(
-      "Please enter the number of characters you want for your password.  It must be more than 8 but less than 16."
+      "Please enter the number of characters you want for your password.  It must be more than 8 but less than 128."
     )
   );
 
   // group selected characters
 
-  if (Number < 8 || Number > 16) {
+  if (Number < 8 || Number > 128) {
     alert("Please choose a valid number of characters.");
   }
 
@@ -44,7 +44,7 @@ function generatePassword() {
     anwser += lowercaseCharacters;
   }
 
-  var upperCases = confirm("Do you want uppercase in your password?");
+  var upperCases = confirm("Do you want uppercases in your password?");
   if (upperCases) {
     anwser += uppercaseCharacters;
   }

@@ -1,6 +1,11 @@
 ## Password Generator
 
+I have created a password generator mainly using Javascript. My assignment was to embed a clickable button which the webpage contains to generate a password powered by Javascript.
+The site was already equipped with the layout and style, beneath shows what was given and what I've accomplished
+
 ## ScreenShot
+
+![Screenshot 1](./Assets/generator-before.png)
 
 ## Link to deployed application:
 
