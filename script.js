@@ -66,29 +66,3 @@ function generatePassword() {
   }
   return "";
 }
-//   var lowerCases = confirm("Do you want lowercases in your password?");
-//   if (lowerCases) {
-//     anwser += lowercaseCharacters;
-//   }
-
-//   var upperCases = confirm("Do you want uppercases in your password?");
-//   if (upperCases) {
-//     anwser += uppercaseCharacters;
-//   }
-
-//   var numbers = confirm("Do you want numbers in your password?");
-//   if (numbers) {
-//     anwser += numericCharacters;
-//   }
-
-//   var special = confirm("Do you want special characters in your password?");
-//   if (special) {
-//     anwser += specialCharacters;
-//   }
-
-//   for (var i = 0; i < passwordLength; i++) {
-//     var randomIndex = Math.floor(Math.random() * anwser.length);
-//     password += anwser[randomIndex];
-//   }
-//   return password;
-// }
