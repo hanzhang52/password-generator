@@ -35,33 +35,60 @@ function generatePassword() {
 
   // Group selected characters
 
-  if (Number < 8 || Number > 128) {
+  if (passwordLength < 8 || passwordLength > 128) {
     alert("Please choose a valid number of characters.");
-  }
+  } else {
+    var lowerCases = confirm("Do you want lowercases in your password?");
+    if (lowerCases) {
+      anwser += lowercaseCharacters;
+    }
 
-  var lowerCases = confirm("Do you want lowercases in your password?");
-  if (lowerCases) {
-    anwser += lowercaseCharacters;
-  }
+    var upperCases = confirm("Do you want uppercases in your password?");
+    if (upperCases) {
+      anwser += uppercaseCharacters;
+    }
 
-  var upperCases = confirm("Do you want uppercases in your password?");
-  if (upperCases) {
-    anwser += uppercaseCharacters;
-  }
+    var numbers = confirm("Do you want numbers in your password?");
+    if (numbers) {
+      anwser += numericCharacters;
+    }
 
-  var numbers = confirm("Do you want numbers in your password?");
-  if (numbers) {
-    anwser += numericCharacters;
-  }
+    var special = confirm("Do you want special characters in your password?");
+    if (special) {
+      anwser += specialCharacters;
+    }
 
-  var special = confirm("Do you want special characters in your password?");
-  if (special) {
-    anwser += specialCharacters;
+    for (var i = 0; i < passwordLength; i++) {
+      var randomIndex = Math.floor(Math.random() * anwser.length);
+      password += anwser[randomIndex];
+    }
+    return password;
   }
-
-  for (var i = 0; i < passwordLength; i++) {
-    var randomIndex = Math.floor(Math.random() * anwser.length);
-    password += anwser[randomIndex];
-  }
-  return password;
+  return "";
 }
+//   var lowerCases = confirm("Do you want lowercases in your password?");
+//   if (lowerCases) {
+//     anwser += lowercaseCharacters;
+//   }
+
+//   var upperCases = confirm("Do you want uppercases in your password?");
+//   if (upperCases) {
+//     anwser += uppercaseCharacters;
+//   }
+
+//   var numbers = confirm("Do you want numbers in your password?");
+//   if (numbers) {
+//     anwser += numericCharacters;
+//   }
+
+//   var special = confirm("Do you want special characters in your password?");
+//   if (special) {
+//     anwser += specialCharacters;
+//   }
+
+//   for (var i = 0; i < passwordLength; i++) {
+//     var randomIndex = Math.floor(Math.random() * anwser.length);
+//     password += anwser[randomIndex];
+//   }
+//   return password;
+// }
